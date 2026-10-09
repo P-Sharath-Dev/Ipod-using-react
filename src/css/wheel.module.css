@@ -1,0 +1,114 @@
+.wheel {
+  width: 250px;
+  height: 250px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(to bottom, #ffffff, #ececec);
+
+  box-shadow:
+    inset 0 2px 8px rgba(255, 255, 255, 0.8),
+    inset 0 -2px 8px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  user-select: none;
+}
+
+.centerButton {
+  width: 95px;
+  height: 95px;
+
+  border-radius: 50%;
+
+  background: #d9d9d9;
+
+  box-shadow:
+    inset 0 2px 4px rgba(255, 255, 255, 0.7),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+}
+
+.menuButton,
+.leftButton,
+.rightButton,
+.bottomButton {
+  position: absolute;
+
+  font-weight: bold;
+
+  color: #555;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.menuButton {
+  top: 22px;
+}
+
+.leftButton {
+  left: 25px;
+
+  font-size: 28px;
+}
+
+.rightButton {
+  right: 25px;
+
+  font-size: 28px;
+}
+
+.bottomButton {
+  bottom: 22px;
+
+  font-size: 26px;
+}
+
+.leftButton,
+.rightButton,
+.bottomButton {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.leftButton {
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.rightButton {
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bottomButton {
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Style all icons */
+.leftButton img,
+.rightButton img,
+.bottomButton img {
+  width: 28px;
+  height: 28px;
+
+  object-fit: contain;
+}
